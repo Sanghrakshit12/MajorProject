@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Placement Cell Management System 
 
-First, run the development server:
+The Placement Cell Management System permits the Student to login/sign-up into the application and view current job
+opportunities available. The System would store all the academic as well as personal details of the
+students who wish to be placed and the Companies who offer jobs to the students. Students can
+apply for the jobs if they are eligible. The admin can manage the database and post upcoming job or
+internship opportunity which can be viewed by the students who are eligible for it. Admin can also
+view the Statistics of Current Placement Drive.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Use case Diagram for Admin
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![](https://drive.google.com/uc?export=view&id=1k7Uj3gT8WWLKUqxmDgOpdDFrXL2ONUXG)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Use case Diagram for Student
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![](https://drive.google.com/uc?export=view&id=1WGbVplOH2d4jLUAgo5tU7Then3U5bYUP)
 
-## Learn More
+## ER Diagram
 
-To learn more about Next.js, take a look at the following resources:
+![](https://drive.google.com/uc?export=view&id=1OD723ztBDV9PeBr5sL458cqaZXQ_7cXl)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Schema Diagram
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![](https://drive.google.com/uc?export=view&id=19WOQ-9P2KNQTbqCW1lFkDb8B47qaX9uq)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
