@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
+import { buttonVariants } from "../ui/button";
 import { Button } from "../ui/button";
 import { useToast } from "../ui/use-toast";
 
@@ -12,33 +13,35 @@ const AuthButtons = () => {
         await signOut({ redirect: false, callbackUrl: "/" });
         toast({
             title: "Logged Out Successfully",
-            description: "See you soon",
+            description: "See you Soon",
         });
+
         window.location.replace("/");
     };
 
     if (session) {
         return (
-            <div className="flex gap-3 justify-end mt-4">
-                <Button onClick={handleLogout} variant="outline" className="shadow-md">
+            <div className="px-4 space-x-4"> {/* Added space-x-4 for horizontal spacing between buttons */}
+                <Link
+                    href={"/signup"}
+                    className={`${buttonVariants({ variant: "outline" })} text-black p-3`}
+                >
+                    Register New Admin
+                </Link>
+                <Button onClick={handleLogout} className={`${buttonVariants({ variant: "outline" })} text-black p-3`}>
                     Logout
-                </Button>
-
-                <Button variant="outline" asChild className="shadow-sm">
-                    <Link href="/SignUp">Create Admin</Link>
-                </Button>
-
-                <Button variant="outline" asChild className="shadow-sm">
-                    <Link href="/admin">Fare Stats</Link>
                 </Button>
             </div>
         );
     } else {
         return (
-            <div className="flex space-x-2">
-                <Button variant="outline" className="bg-blue-700" asChild>
-                    <Link href="/SignIn" className="text-white">Get started &gt;</Link>
-                </Button>
+            <div className="px-2">
+                <Link
+                    href={"/signin"}
+                    className={`${buttonVariants({ variant: "outline" })} text-black p-3`}
+                >
+                    Sign In
+                </Link>
             </div>
         );
     }

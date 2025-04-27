@@ -1,27 +1,34 @@
-import AuthButtons from "./Component/form/authbutton";
+import Navbar from "./Component/Navbar";
+
 import Image from "next/image";
-export default async function Home() {
-    return (
-        <div className="fixed left-0 right-0 top-0 z-10 bg-blue py-5 mt-12">
-            
-            <div className="container mx-auto flex flex-col items-center justify-center gap-2 text-center">
-                <div className="text-lg font-bold text-blue-600">Admin Portal
-                <div className="text-3xl font-medium text-gray-700"></div>
-                
 
-                {/* <Image
-                    src={'/login.jpg'}
-                    alt="Travel illustration"
-                    height={400}
-                    width={400}
-                /> */}
-
-                <div className="flex items-center gap-4 mt-6">
-                    <AuthButtons />
-                </div>
-            </div>
-
+export default function Home() {
+  return (
+    <div>
+      <Navbar />
+      <div className="flex flex-col sm:flex-row">
+        <div className=" m-2 w-4/5 sm:mx-24  sm:w-1/3">
+          <div className="w-full  rounded-md p-4  text-white sm:p-8">
+            <h2 className="m-3 mb-8 font-sans text-4xl font-bold transition-all hover:scale-105 sm:text-6xl ">
+             
+            </h2>
+            <p className="text-md m-3 pt-3 font-serif text-slate-500 sm:text-xl">
+              
+            </p>
+          </div>
+          <div className="flex justify-end py-3">
+          </div>
         </div>
+        <div className="mx-auto mt-12 flex  w-1/2 items-center justify-center ">
+          <Image
+            src={"/nitj.jpeg"}
+            alt="Icon"
+            width={1000}
+            height={1000}
+            className=""
+          />
         </div>
-    );
+      </div>
+    </div>
+  );
 }
