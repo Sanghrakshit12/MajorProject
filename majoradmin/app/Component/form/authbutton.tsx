@@ -21,7 +21,7 @@ const AuthButtons = () => {
 
     if (session) {
         return (
-            <div className="px-4 space-x-4"> {/* Added space-x-4 for horizontal spacing between buttons */}
+            <div className="px-4 space-x-4"> 
                 <Link
                     href={"/signup"}
                     className={`${buttonVariants({ variant: "outline" })} text-black p-3`}

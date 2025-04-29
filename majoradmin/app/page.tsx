@@ -23,8 +23,8 @@ export default function Home() {
           <Image
             src={"/nitj.jpeg"}
             alt="Icon"
-            width={1000}
-            height={1000}
+            width={1300}
+            height={1300}
             className=""
           />
         </div>
